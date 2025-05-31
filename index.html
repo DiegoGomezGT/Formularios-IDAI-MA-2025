@@ -3,51 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Formulario</title>
 </head>
 <body>
     <h1>Formulario de información personal</h1>
     <form action="formulario.html" method="get">
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
+        <input type="text" name="nombre" id="nombre" autocomplete="off" required>
         <br>
         <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido">
-        <br>
-        <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="fecha">
-        <br>
-        <label for="hora">Hora</label>
-        <input type="time" name="hora" id="hora">
+        <input type="text" name="apellido" id="apellido" autocomplete="off" required>
         <br>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" autocomplete="off" required>
         <br>
         <label for="direccion">Dirección</label>
-        <input type="text" name="direccion" id="direccion">
+        <input type="text" name="direccion" id="direccion" autocomplete="off" required>
         <br>
-        <label for="url">Url</label>
-        <input type="url" name="url" id="url">
+        <label for="url">Tu página personal</label>
+        <input type="url" name="url" id="url" autocomplete="off" placeholder="https://fb.com/GarfierdhTai" required>
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <select name="nacionalidad" id="nacionalidad" required>
+         <option value="Mexicana">México</option>
+         <option value="Colombiana">Colombia</option>
+         <option value="Estadounidense">Estados Unidos</option>
+         <option value="Venezolana">Venezuela</option>
+         <option value="Peruana">Perú</option>
+         <option value="Argentina">Argentina</option>
+         <option value="Ecuatoriana">Ecuador</option>
+         <option value="Chilena">Chile</option>
+         </select>
+        <br>
+        <label for="fecha">Fecha de Cumpleaños</label>
+        <input type="date" name="fecha" id="fecha" autocomplete="off" required>
+        <br>
+        <label for="hora">Hora de Nacimiento</label>
+        <input type="time" name="hora" id="hora" autocomplete="off" required> 
+        <br>
+        <input type="reset" value="Borrar">
+        <br>
         <br>
         <input type="submit" value="Enviar">
         <br>
-        <label for="">Imagen</label>
-        <input type="image" src="img/mc.png" alt="mc">
-    </form>
-    <br>
-    <form action="avanzado.html" method="get">
-        <label for="">Selecciona un Archivo</label><br>
-        <input type="file" name="foto" id="foto">
-        <br>
-        <label for="hora">Hora</label>
-        <input type="time" name="hora" id="hora">
-        <br>
-        <label for="">Imagen</label>
-        <input type="image" src="img/mc.png" alt="mc"><br>
-        <label for="">Borrar</label>
-        <input type="reset" value="Borrar">
-    </form>
-    <br>
-    <progress max="100" value="20"></progress>
+        </form>
 </body>
 </html>

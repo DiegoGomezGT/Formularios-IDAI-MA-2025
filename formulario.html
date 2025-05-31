@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Tus Respuestas</title>
 </head>
 <body>
+    <h1>Esta son las respuestas que has ingresado:</h1>
+    <p id="nombre"></p>
+    <p id="apellido"></p>
+    <p id="email"></p>
+    <p id="direccion"></p>
+    <p id="nacionalidad"></p>
+    <p id="url"></p>
+    <p id="fecha"></p>
+    <p id="hora"></p>
     
+    
+    <script>
+        alert("¡Gracias por enviar tus datos! ¡Has sido doxeado exitosamente! Estas son las respuestas que has ingresado:");
+    // Obtener parámetros de la URL
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get("nombre");
+    const apellido = params.get("apellido");
+    const email = params.get("email");
+    const direccion = params.get("direccion");
+    const nacionalidad = params.get("nacionalidad");
+    const url = params.get("url");
+    const hora = params.get("hora");
+    const fecha = params.get("fecha");
+
+    // Mostrar en la página
+    document.getElementById("nombre").textContent = "Nombre: " +  nombre;
+    document.getElementById("apellido").textContent = "Apellido: " + apellido;
+    document.getElementById("email").textContent = "Email: " + email;
+    document.getElementById("direccion").textContent = "Dirección: " + direccion;
+    document.getElementById("nacionalidad").textContent = "Nacionalidad: " + nacionalidad;
+    document.getElementById("url").textContent = "Tu página personal: " + url;
+    document.getElementById("fecha").textContent = "Fecha de Cumpleaños: " + fecha;
+    document.getElementById("hora").textContent = "Hora de Nacimiento: " + hora;
+
+    </script>
 </body>
 </html>
