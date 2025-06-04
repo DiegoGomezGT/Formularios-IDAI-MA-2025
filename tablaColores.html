@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <title>Tabla</title>
+    <style>
+        table {
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            border: 3px solid #dee2e6;
+            border-collapse: collapse;
+            
+        }
+        table th, table td {
+            border: 3px solid #dee2e6;
+            padding: 5px 10px;
+        }
+        table th, table td:first-child {
+            background-color: #17a2b8;
+            color: white;
+            width: 100px;
+            font-weight: 100px;
+        }
+        table td span{
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        table td span:nth-child(1) {
+            color: #17a2b8;
+        }
+        table td span:nth-child(2) {
+            color: #17b837;
+        }
+        table td span:nth-child(3) {
+            color: #b83a17;
+        }
+        table tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        table tr:hover{
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123456</td>
+                <td>Ricardo</td>
+                <td>Elizalde</td>
+                <td>@uanl.edu</td>
+                <td>
+                    <span class="fa-solid fa-circle-info"></span>
+                    <span class="fa-solid fa-pen-to-square"></span>
+                    <span class="fa-solid fa-trash"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>123456</td>
+                <td>Ricardo</td>
+                <td>Elizalde</td>
+                <td>@uanl.edu</td>
+                <td>
+                    <span class="fa-solid fa-circle-info"></span>
+                    <span class="fa-solid fa-pen-to-square"></span>
+                    <span class="fa-solid fa-trash"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
