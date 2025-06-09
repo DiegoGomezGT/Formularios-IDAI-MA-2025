@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+    <style>
+        article{
+			border: 1px solid red;
+			margin-bottom: 100px;
+        }
+        .bloque div{			
+               display: block;		
+        }
+        .enlinea div{             
+               display: inline-block;
+        }
+        .entable div{
+               display: table-cell;
+        }
+
+        .clavecolor{
+            width: 200px; height: 200px;
+            background-color: red;
+            padding: 10px;
+            border: 5px solid rgb(255, 247, 247);
+            border-radius: 10%;
+            margin: 20px;
+        }
+        .colorhexa{
+            width: 200px; height: 200px;
+            background-color: #3b2b99;
+            padding: 20px 10px 5px 10px;
+        }
+        .colorrgb{
+            width: 200px; height: 200px;
+            background-color: rgb(134, 145, 10);
+            border-top: 10px solid rgb(255, 123, 0);
+            border-right: 5px solid rgb(255, 247, 247);
+            border-bottom: 10px solid rgb(255, 123, 0);
+            border-left: 5px solid rgb(255, 247, 247);
+        }
+        .clasehsl{
+            width: 200px; height: 200px;
+            background-color: hsl(305, 71%, 61%);
+            margin: 10px 20px 30px 40px;
+        }
+        .transparencia{
+            width: 200px; height: 200px;
+            background-color: hsla(305, 88%, 24%, 0.2);
+            background-color: #18096f32;
+            background-color: rgba(117, 4, 4, 0.2);
+        }
+        .degradado{
+            width: 200px; height: 200px;
+            background: linear-gradient(45deg, rgb(255, 77, 0) 0%, rgb(0, 30, 255) 50%, rgba(255, 85, 0, 0.5) 100%);
+        }
+        .degradado2{
+            width: 200px; height: 200px;
+            background:radial-gradient(red, yellow, green, blue);   
+        }
+        body{background-color:#6690d3;}
+    </style>
+</head>
+<body>
+    En Bloque
+    <article class="bloque">
+    <div class="clavecolor">1</div>
+    <div class="clavecolor">2</div>
+    </article>
+    En Linea
+    <article class="enlinea">
+    <div class="colorhexa">1</div>
+    <div class="colorhexa">2</div>
+    </article>
+    En Tabla
+    <article class="entable">
+    <div class="colorrgb">1</div>
+    <div class="colorrgb">2</div>
+    </article>
+    <article>
+    <div class="clasehsl">1</div>
+    <div class="clasehsl">2</div>
+    </article>
+    <div class="transparencia"></div>
+    <div class="degradado"></div>
+    <div class="degradado2"></div>
+</body>
+</html>
