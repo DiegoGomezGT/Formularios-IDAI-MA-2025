@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colores</title>
+    <title>Colores con Posicionamiento</title>
     <style>
         article{
-			border: 1px solid red;
+			border: 4px solid wheat;
 			margin-bottom: 100px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: white;
+            font-size: xx-large;
         }
         .bloque div{			
                display: block;		
@@ -18,7 +21,31 @@
         .entable div{
                display: table-cell;
         }
+        #relativo{
+               position: relative;
+               left: 300px;
+        }
+        #absoluto{
+               position: absolute;
+               left: 500px;
+        }
+        #fijo{
+               position: fixed;
+               right: 200px;
+               top: 100px;
+        }
+        .flotante{
+               width: 500px;
+               height: 100%;
 
+        }  
+        .flotante div{
+               float: left;
+                    
+        }
+        .flotante div:nth-child(2){
+               float: right;
+        }
         .clavecolor{
             width: 200px; height: 200px;
             background-color: red;
@@ -60,30 +87,54 @@
             background:radial-gradient(red, yellow, green, blue);   
         }
         body{background-color:#6690d3;}
+        div{text-align: center; align-items: center; vertical-align: middle; line-height: 200px; font-size: 100px;}
     </style>
 </head>
 <body>
-    En Bloque
     <article class="bloque">
+    En Bloque
     <div class="clavecolor">1</div>
     <div class="clavecolor">2</div>
+    <div class="clavecolor">3</div>
     </article>
-    En Linea
     <article class="enlinea">
+    En Linea
+    <br>
     <div class="colorhexa">1</div>
     <div class="colorhexa">2</div>
+    <div class="colorhexa">3</div>
     </article>
-    En Tabla
     <article class="entable">
+    En Tabla
     <div class="colorrgb">1</div>
     <div class="colorrgb">2</div>
-    </article>
-    <article>
+    <div class="colorrgb">3</div>
+    </article>  
+    <article id="relativo">
+    Relativo
     <div class="clasehsl">1</div>
     <div class="clasehsl">2</div>
+    <div class="clasehsl">3</div>
     </article>
-    <div class="transparencia"></div>
-    <div class="degradado"></div>
-    <div class="degradado2"></div>
+    
+    <article id="fijo">
+    Fijo
+    <div class="degradado">1</div>
+    <div class="degradado">2</div>
+    <div class="degradado">3</div>
+    </article>
+    <article class="flotante">
+    Flotante
+    <br>
+    <div class="degradado2">1</div>
+    <div class="degradado2">2</div>
+    <div class="degradado2">3</div>
+    </article>
+    <article id="absoluto">
+    Absoluto
+    <div class="transparencia">1</div>
+    <div class="transparencia">2</div>
+    <div class="transparencia">3</div>
+    </article>
 </body>
 </html>
