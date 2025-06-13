@@ -7,6 +7,9 @@
      <title>Menu CSS3</title>
 
      <style>
+          body{
+               background-color: rgb(211, 211, 211);
+          }
           .fontvarela{
 			margin: 0;
                padding: 0;
@@ -16,13 +19,16 @@
                display: flex;
                justify-content: space-around;
                align-items: center;
-               padding: 10px 0px;
-               border-bottom: 1px solid blue;
-               margin-bottom: 100px;
+               padding: 10px 0px 10px 0px;
+               border: 1px solid blue;
+               border-radius: 10px;
+               margin-bottom: 50px;
+               background-color: wheat;
           }
           li{
                display: inline-block;
-               padding: 0 20px;
+               padding: 20px;
+               border-radius: 25px;
                list-style: none;
           }
           li:hover{
@@ -37,13 +43,16 @@
                text-decoration: none;
                text-transform: uppercase;
                font-weight: 700;
-               color: gray;               
+               color: rgb(62, 62, 62);               
           }
           .btn{
                padding: 10px 25px;
                background-color: red;
                color: white;
                border-radius: 50px;
+          }
+          .btn:hover{
+               background-color: darkred;
           }
 
      </style>
@@ -52,7 +61,7 @@
      <header>
           <img src="img/logo.png" alt="" class="logo">
           <nav>
-               <ul>
+               <ul class="fontvarela">
                     <li><a href="">Nosotros</a></li>
                     <li><a href="">Sevicios</a></li>
                     <li><a href="">Portafolio</a></li>
@@ -62,7 +71,5 @@
           </nav>
           <a href="" class="btn">Login</a>
      </header>
-<p class="fontvarela"> Hola Gente</p>
-<p>Adios Gente</p>
 </body>
 </html>
