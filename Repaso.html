@@ -7,12 +7,106 @@
     <style>
         body {
             background-color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        table {
+            width: 80%;
+            margin: auto;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            padding: 5px;
+
+        }
+        td {
+            width: 30%;
+        }
+        .uno {
+            color: black;
+            background-color: white;
+            font-weight: 800;
+        }
+        .dos {
+            font-weight: 800;
+        }
+        .contenedor{
+			width: 100%;
+			height: 400px;
+			background-color: #dedede;
+			float: left;
+			margin: 10px;
+			display: flex;
+			flex-flow: row wrap;
+		}
     </style>
 </head>
 <body>
-<br>
-<hr color="white" size="3">
-<form action=""></form>
+    <br>
+    <hr color="white" size="3">
+    <form action="">
+        <table>
+        <tr>
+            <td>
+                <img src="img/repaso/logo2.png" alt="" width="100%">
+                <p class="uno">    Renta de Autos de Lujo</p>
+                Datos del Cliente
+                <hr color="white" size="2">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="off" required>
+                <br>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" autocomplete="off" required>
+                <br>
+                <label for="apellido">Telefono</label>
+                <input type="text" name="apellido" id="apellido" autocomplete="off" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+                <br>
+                <hr color="white" size="2">
+                <label for="fecha">Fecha de Renta</label>
+                <input type="date" name="fecha" id="fecha" autocomplete="off" required>
+                <br>
+                <label for="dias">Numero de dias</label>
+                <input type="text" name="dias" id="dias" autocomplete="off" required>
+                <br>
+            </td>
+            <td>
+                <p class="dos">Marca de preferencia</p>
+                <hr color="white" size="2">
+                <input type="radio" name="marca" value="Mercedes">Mercedes Benz<br>
+                <input type="radio" name="marca" value="BMW">BMW<br>
+                <input type="radio" name="marca" value="Porsche">Porsche<br>                
+                <input type="radio" name="marca" value="Audi">Audi<br>
+                <input type="radio" name="marca" value="Infiniti">INFINITI<br>
+                
+                <hr color="white" size="2">
+                <div class="contenedor">
+                    
+                </div>
+
+            </td>
+            <td>
+                <p class="dos">Modelo</p>
+                <hr color="white" size="2">
+                
+                <br>
+                <br>
+                Servicios extra
+                <hr color="white" size="2">
+                <p class="dos">La renta del auto puede estar acompañado de servicios extras:.</p>
+                <input type="checkbox">Contratacion de chofer all day <br>
+                <input type="checkbox">Traslado Hotel/Aeropuerto <br>
+                <input type="checkbox">Kilometraje libre <br>
+                <input type="checkbox">Auto Electrico <br>
+                <input type="checkbox">Esterilización diaria nocturna <br> 
+                <input type="checkbox">Internet Wifi In Car <br>
+                <br>
+                <input type="submit" value="Hacer tu reservación">
+        <br>               
+            </td>
+        </tr>
+        </table>
+    </form>
 </body>
 </html>
